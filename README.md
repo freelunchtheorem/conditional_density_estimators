@@ -4,14 +4,14 @@
 
 
 ## Installation
-To use the library, either clone the GitHub repository and run 
-```bash
-pip install .
-``` 
-in the package folder or directly use the python package index:
+To use the library, either install it via
 ```bash
 pip install <todo>
 ```
+or clone the GitHub repository and run 
+```bash
+pip install .
+``` 
 Note that the package only supports tensorflow versions between 1.4 and 1.7.
 ## Documentation
 See a documentation [here](https://freelunchtheorem.github.io/Conditional_Density_Estimation) and see our other package including simulators and evaluation methods [here](https://github.com/freelunchtheorem/Conditional_Density_Estimation).
