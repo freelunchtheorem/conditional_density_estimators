@@ -1,22 +1,21 @@
-[![Build Status](https://travis-ci.org/freelunchtheorem/Conditional_Density_Estimation.svg?branch=master)](https://travis-ci.org/freelunchtheorem/Conditional_Density_Estimation) [![Downloads](https://pepy.tech/badge/cde)](https://pepy.tech/project/cde)
-
 # Conditional Density Estimators
 
 ## Description
+<todo>
 
 
 ## Installation
-To use the library, either clone the GitHub repository and run 
+To use the library, either install it via
+```bash
+pip install <todo>
+```
+or clone the GitHub repository and run 
 ```bash
 pip install .
 ``` 
-in the package folder or directly use the python package index:
-```bash
-pip install cde
-```
 Note that the package only supports tensorflow versions between 1.4 and 1.7.
 ## Documentation
-See the documentation [here](https://freelunchtheorem.github.io/Conditional_Density_Estimation).
+See a documentation [here](https://freelunchtheorem.github.io/Conditional_Density_Estimation). If you're interested in more implementations for conditional density estimation, see our other package including many data generating processes and evaluation methods [here](https://github.com/freelunchtheorem/Conditional_Density_Estimation).
 
 ## Usage
 The following code snipped holds an easy example that demonstrates how to use the cde package.
@@ -46,7 +45,7 @@ std = model.std_(x_cond)[0][0]
 skewness = model.skewness(x_cond)[0]
 ```
 ## Citing
-If you use CDE in your research, you can cite it as follows:
+If you use this package in your research, you can cite it as follows:
 
 ```
 @misc{cde2019,
