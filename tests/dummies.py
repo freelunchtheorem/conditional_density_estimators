@@ -4,8 +4,8 @@ import scipy.stats as stats
 import numpy as np
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from cde.density_simulation import BaseConditionalDensitySimulation
-from cde.density_estimator import BaseDensityEstimator
+from ce.density_simulation import BaseConditionalDensitySimulation
+from ce.density_estimator import BaseDensityEstimator
 
 
 

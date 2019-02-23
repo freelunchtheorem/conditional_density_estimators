@@ -2,9 +2,9 @@ from sklearn.model_selection import GridSearchCV
 import warnings
 from sklearn.model_selection import cross_validate
 
-from cde import ConditionalDensity
+from ce import ConditionalDensity
 
-from cde.utils.center_point_select import *
+from ce.utils.center_point_select import *
 
 class BaseDensityEstimator(ConditionalDensity):
   """ Interface for conditional density estimation models """

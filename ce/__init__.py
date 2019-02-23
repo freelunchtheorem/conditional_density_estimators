@@ -1,3 +1,4 @@
+from .BaseConditionalDensity import ConditionalDensity
 from .KMN import KernelMixtureNetwork
 from .LSCDE import LSConditionalDensityEstimation
 from .NKDE import NeighborKernelDensityEstimation

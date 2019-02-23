@@ -9,11 +9,11 @@ import numpy as np
 import scipy.stats as stats
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from cde.utils.center_point_select import sample_center_points
-from cde.utils.misc import norm_along_axis_1
-from cde.utils.integration import mc_integration_student_t, numeric_integation
-from cde.utils.async_executor import execute_batch_async_pdf
-from cde.utils.distribution import batched_univ_t_pdf, batched_univ_t_cdf, batched_univ_t_rvs
+from ce.utils.center_point_select import sample_center_points
+from ce.utils.misc import norm_along_axis_1
+from ce.utils.integration import mc_integration_student_t, numeric_integation
+from ce.utils.async_executor import execute_batch_async_pdf
+from ce.utils.distribution import batched_univ_t_pdf, batched_univ_t_cdf, batched_univ_t_rvs
 
 
 class TestHelpers(unittest.TestCase):
@@ -147,7 +147,7 @@ class TestDistribution(unittest.TestCase):
 
   def test_multidim_student_t(self):
     from scipy.stats import t
-    from cde.utils.distribution import multidim_t_pdf
+    from ce.utils.distribution import multidim_t_pdf
     mu = 5 * np.ones(3)
     sigma = 3 * np.ones(3)
     dof = 6

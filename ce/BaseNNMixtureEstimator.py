@@ -7,12 +7,12 @@ import sklearn
 import os
 import itertools
 
-from cde.density_estimator.BaseDensityEstimator import BaseDensityEstimator
-from cde.utils.tf_utils.layers_powered import LayersPowered
-from cde.utils.serializable import Serializable
-import cde.utils.tf_utils.layers as L
-from cde.utils.tf_utils.map_inference import MAP_inference
-from cde.utils.async_executor import AsyncExecutor
+from ce.BaseDensityEstimator import BaseDensityEstimator
+from ce.utils.tf_utils.layers_powered import LayersPowered
+from ce.utils.serializable import Serializable
+import ce.utils.tf_utils.layers as L
+from ce.utils.tf_utils.map_inference import MAP_inference
+from ce.utils.async_executor import AsyncExecutor
 
 class BaseNNMixtureEstimator(LayersPowered, Serializable, BaseDensityEstimator):
 

@@ -2,21 +2,18 @@
 # code skeleton from https://github.com/janvdvegt/KernelMixtureNetwork
 # this version additionally supports fit_by_crossval and multidimentional Y
 #
-import math
 import numpy as np
-import sklearn
 import tensorflow as tf
-import edward as ed
 from edward.models import Categorical, Mixture, MultivariateNormalDiag
-from cde.utils.tf_utils.network import MLP
-import cde.utils.tf_utils.layers as L
-from cde.utils.tf_utils.layers_powered import LayersPowered
-from cde.utils.serializable import Serializable
+from ce.utils.tf_utils.network import MLP
+import ce.utils.tf_utils.layers as L
+from ce.utils.tf_utils.layers_powered import LayersPowered
+from ce.utils.serializable import Serializable
 #import matplotlib.pyplot as plt
 
 
-from cde.utils.center_point_select import sample_center_points
-from cde.density_estimator.BaseNNMixtureEstimator import BaseNNMixtureEstimator
+from ce.utils.center_point_select import sample_center_points
+from ce.BaseNNMixtureEstimator import BaseNNMixtureEstimator
 
 import logging
 logging.getLogger("tensorflow").setLevel(logging.ERROR)

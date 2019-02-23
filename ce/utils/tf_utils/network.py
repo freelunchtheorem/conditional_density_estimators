@@ -2,13 +2,13 @@
 # Code from rllab https://github.com/rll/rllab/tree/master/sandbox
 #
 
-import cde.utils.tf_utils.layers as L
+import ce.utils.tf_utils.layers as L
 import tensorflow as tf
 import numpy as np
 import itertools
-from cde.utils.serializable import Serializable
-from cde.utils.tf_utils.parameterized import Parameterized
-from cde.utils.tf_utils.layers_powered import LayersPowered
+from ce.utils.serializable import Serializable
+from ce.utils.tf_utils.parameterized import Parameterized
+from ce.utils.tf_utils.layers_powered import LayersPowered
 
 
 class MLP(LayersPowered, Serializable):

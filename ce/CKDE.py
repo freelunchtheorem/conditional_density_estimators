@@ -1,7 +1,7 @@
 import numpy as np
 import statsmodels.api as sm
 
-from cde.utils.async_executor import execute_batch_async_pdf
+from ce.utils.async_executor import execute_batch_async_pdf
 from .BaseDensityEstimator import BaseDensityEstimator
 
 MULTIPROC_THRESHOLD = 10**4

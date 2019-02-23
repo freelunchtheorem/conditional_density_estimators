@@ -8,8 +8,9 @@ import os
 import numpy as np
 import scipy.stats as stats
 
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from cde.density_estimator import MixtureDensityNetwork, KernelMixtureNetwork, \
+from ce import MixtureDensityNetwork, KernelMixtureNetwork, \
   ConditionalKernelDensityEstimation, LSConditionalDensityEstimation, NeighborKernelDensityEstimation
 
 class TestConditionalDensityEstimators_2d_gaussian(unittest.TestCase):
@@ -264,7 +265,7 @@ class TestConditionalDensityEstimators_2d_gaussian(unittest.TestCase):
   def test_CDE_with_2d_gaussian(self):
     X, Y = self.get_samples()
 
-    model = ConditionalKernelDensityEstimation('cde', 1, 1)
+    model = ConditionalKernelDensityEstimation('ce', 1, 1)
     model.fit(X, Y)
 
     y = np.arange(-1, 5, 0.5)

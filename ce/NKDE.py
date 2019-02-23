@@ -4,9 +4,9 @@ from scipy.stats import multivariate_normal
 import scipy.optimize as optimize
 import warnings
 
-from cde.utils.misc import norm_along_axis_1
+from ce.utils.misc import norm_along_axis_1
 from .BaseDensityEstimator import BaseDensityEstimator
-from cde.utils.async_executor import execute_batch_async_pdf
+from ce.utils.async_executor import execute_batch_async_pdf
 from scipy.special import logsumexp
 
 _MULTIPROC_THRESHOLD = 10 ** 4
